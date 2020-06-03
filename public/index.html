@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      body {
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,92,0.17690826330532217) 35%, rgba(2,222,35,0.40379901960784315) 84%, rgba(0,212,255,1) 100%);
+      }
+    </style>
   </head>
   <body>
     <noscript>
@@ -13,5 +19,8 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </body>
 </html>
