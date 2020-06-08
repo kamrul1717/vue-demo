@@ -1,7 +1,15 @@
 <template>
 	<div>
-		<span :class="{completed: todo.completed}" @click="toggleTodoStatus(todo)">{{todo.title}}</span>
-		<button @click="deleteTodo(todo)">Delete</button>
+		<div class="row">
+			<div class="col-md-8">
+				<h3 :class="{completed: todo.completed}" @click="toggleTodoStatus(todo)">{{todo.title}}</h3>
+			</div>
+			<div class="col-md-4">
+				<button @click="deleteTodo(todo)" class="btn btn-sm btn-danger">Delete</button>
+			</div>
+		</div>
+		
+		
 	</div>
 </template>
 
