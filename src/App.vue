@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <h1>Todos</h1>
     <h3>Completed: {{completedTodos}}</h3>
     <h3>Pending: {{pendingTodos}}</h3>
@@ -12,7 +12,6 @@
 import TodosList from './components/TodosList.vue';
 import TodoForm from './components/TodoForm.vue';
 import { mapGetters } from 'vuex';
-import $ from 'jquery'
 
 export default {
   name: 'App',
@@ -35,8 +34,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #fff;
   margin-top: 60px;
 }
 </style>
